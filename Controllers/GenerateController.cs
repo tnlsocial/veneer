@@ -68,7 +68,8 @@ namespace veneer.Controllers
                 {
                     Text = quote.Text,
                     Base64Image = base64Image,
-                    Duration = sw.ElapsedMilliseconds.ToString()
+                    Duration = sw.ElapsedMilliseconds.ToString(),
+                    TvShow = tvshow
                 };
 
                 HttpContext.Session.SetString("ImageViewModel", JsonConvert.SerializeObject(ivm));

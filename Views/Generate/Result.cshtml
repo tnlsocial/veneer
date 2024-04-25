@@ -10,7 +10,7 @@
     </div>
 </div>
 <div>
-    <form asp-action="Create">
+    <form asp-controller="@Model.TvShow" asp-action="Create">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         @Html.TextAreaFor(m => m.Text, new { rows = "2", @class = "form-control", @maxlength = "500", value = Model.Text })
         <br />
