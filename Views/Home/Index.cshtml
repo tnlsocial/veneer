@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "veneer! - Home";
+}
+
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4">Welcome to veneer!</h1>
+            <p class="lead">Create images with captions from random scenes.</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h2 class="mb-4">Featured Shows</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/frasier.png" class="card-img-top" alt="Frasier">
+                    <div class="card-body">
+                        <h5 class="card-title">Frasier</h5>
+                        <p class="card-text">Generate hilarious captions based on Frasier. Relive the classic moments in a new fun way.</p>
+                        <a asp-controller="Frasier" asp-action="Create" class="btn btn-primary">Create Frasier Image</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/twilight_zone.png" class="card-img-top" alt="The Twilight Zone">
+                    <div class="card-body">
+                        <h5 class="card-title">The Twilight Zone</h5>
+                        <p class="card-text">Step into the twilight zone with custom eerie captions and iconic scenes.</p>
+                        <a asp-controller="TwilightZone" asp-action="Create" class="btn btn-primary">Create Twilight Zone Image</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/star_trek_tng.png" class="card-img-top" alt="Star Trek: The Next Generation">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Trek: TNG</h5>
+                        <p class="card-text">Explore new worlds and caption your favorite Star Trek TNG moments.</p>
+                        <a asp-controller="StarTrek" asp-action="Create" class="btn btn-primary">Create Star Trek Image</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

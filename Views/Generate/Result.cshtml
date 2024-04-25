@@ -1,0 +1,21 @@
+﻿@model veneer.ViewModels.ImageViewModel
+
+@{
+    ViewData["Title"] = "veneer!";
+}
+<div>
+    <img src="@Model.Base64Image" class="img-fluid" />
+    <div style="visibility: hidden">
+        <p>Generated in @Model.Duration ms</p>
+    </div>
+</div>
+<div>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.TextAreaFor(m => m.Text, new { rows = "2", @class = "form-control", @maxlength = "500", value = Model.Text })
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Recreate" class="w-100 btn btn-lg btn-success" />
+        </div>
+    </form>
+</div>

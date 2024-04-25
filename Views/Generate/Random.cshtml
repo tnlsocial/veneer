@@ -1,0 +1,14 @@
+﻿@model veneer.ViewModels.ImageViewModel
+
+@{
+    ViewData["Title"] = "veneer! - Random image";
+}
+
+<div>
+    <dl class="row">
+            <img src="@Model.Base64Image" class="img-fluid" />
+    </dl>
+</div>
+<div class="col-md-6 mx-auto">
+    <a class="w-100 btn btn-lg btn-success" asp-action="Random">Another one!</a>
+</div>
